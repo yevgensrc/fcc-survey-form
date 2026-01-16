@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <div class="survey">
+    <div class="survey-header">
+      <h1 class="h1-title" id="title">Customer Satisfaction Survey</h1>
+      <p class="description" id="description">Help us improve our services by sharing your experience.</p>
+    </div>
+    <form class="survey-form" id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Age (optional)</label>
+        <input type="number" id="number" name="age" min="18" max="99" placeholder="Enter your age">
+      </div>
+      <div class="form-group select-group">
+        <label for="dropdown">How did you know about us?</label>
+        <div class="select-wrap">
+          <select id="dropdown" name="referral" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="social">Social Media</option>
+            <option value="friend">Friend</option>
+            <option value="search">Search Engine</option>
+            <option value="advertisement">Advertisement</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>How satisfied are you with our service?</label>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="satisfaction" value="very-satisfied"> Very Satisfied
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="satisfaction" value="satisfied"> Satisfied
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="satisfaction" value="neutral"> Neutral
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="satisfaction" value="very-dissatisfied"> Very Dissatisfied
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Which features do you use regularly?</label>
+        <div class="checkbox-group">
+          <label class="checkbox-option">
+            <input type="checkbox" name="features" value="dashboard"> Dashboard
+          </label>
+          <label class="checkbox-option">
+            <input type="checkbox" name="features" value="reports"> Reports
+          </label>
+          <label class="checkbox-option">
+            <input type="checkbox" name="features" value="analytics"> Analytics
+          </label>
+          <label class="checkbox-option">
+            <input type="checkbox" name="features" value="notifications"> Notifications
+          </label>
+          <label class="checkbox-option">
+            <input type="checkbox" name="features" value="mobile-app"> Mobile App
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="comments">Additional comments or suggestions</label>
+        <textarea id="comments" name="comments" placeholder="Please share your feedback..."></textarea>
+      </div>
+      <button type="submit" class="submit-btn" id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
